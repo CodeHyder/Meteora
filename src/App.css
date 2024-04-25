@@ -1,0 +1,25 @@
+:root {
+
+    /*========== Font size ==========*/
+    --title-font-size: 48px;
+    --small-title-font-size: 32px;
+    --subtitle-font-size: 20px;
+    --normal-font-size: 16px;
+    --small-font-size: 13px;
+
+    /*========== Font weight ==========*/
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-bold: 600;
+
+    /*========== Font Colors ==========*/
+
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray: #CCCCCC;
+    --green: #DAFF01;
+    --purple: #9353FF;
+    --orange: #F87F46;
+    --pink: #EE6471;
+
+}

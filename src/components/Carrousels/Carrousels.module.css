@@ -1,0 +1,34 @@
+.bannerContainer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px red;
+}
+
+.bannerImg {
+    height: 100%;
+    width: 100%;
+}
+
+.bannerTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: white;
+    height: 59%;
+    /* left: 459px;
+    top: 228.5px; */
+}
+
+.bannerTitle {
+    font-size: var(--title-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 5px;
+}
+
+.bannerSubtitle {
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--font-normal);
+}
+ 

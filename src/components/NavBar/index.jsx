@@ -4,21 +4,21 @@ import styles from './NavBar.module.css'
 function NavBar() {
     return (
         <nav className={styles.navBar}>
-            <div className={styles.navBarContainer}>
+            <div className={styles.navBar__container}>
                 <div className={styles.navListContainer}>
-                    <img src={logo} alt="Logo da loja Meteora" className={styles.navLogo}/>
+                    <img src={logo} alt="Logo da loja Meteora" className={styles.navBar__logo}/>
                     <ul className={styles.navList}>
-                        <li className={styles.navListItem}>
-                            <a href='/' className={styles.navListLink}>Lojas</a>
+                        <li className={styles.navList__item}>
+                            <a href='/' className={styles.navList__link}>Lojas</a>
                         </li>
-                        <li className={styles.navListItem}>
-                            <a href='/' className={styles.navListLink}>Home</a>
+                        <li className={styles.navList__item}>
+                            <a href='/' className={styles.navList__link}>Home</a>
                         </li>
-                        <li className={styles.navListItem}>
-                            <a href='/' className={styles.navListLink}>Novidades</a>
+                        <li className={styles.navList__item}>
+                            <a href='/' className={styles.navList__link}>Novidades</a>
                         </li>
-                        <li className={styles.navListItem}>
-                            <a href='/' className={styles.navListLink}>Promoções</a>
+                        <li className={styles.navList__item}>
+                            <a href='/' className={styles.navList__link}>Promoções</a>
                         </li>
                     </ul>
                 </div>

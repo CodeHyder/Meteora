@@ -5,19 +5,19 @@
     height: 58px;
 }
 
-.navBarContainer { 
+.navBar__container { 
     width: 100%;
     margin: 0 23px;
     display: flex;
     justify-content: space-between;
 }
 
-.navListContainer{
+.navListContainer {
     display: flex;
     align-items: center;
 }
 
-.navLogo {
+.navBar__logo {
     cursor: pointer;
 }
 
@@ -26,12 +26,12 @@
     display: flex;
 }
 
-.navListItem {
+.navList__item {
     font-size: var(--font-normal);
     margin-left: 40px; 
 }
 
-.navListLink{
+.navList__link{
     color: white;
     text-decoration: none;
 }

@@ -1,5 +1,6 @@
-import logo from '../../assets/Logodesktop.png'
-import styles from './NavBar.module.css'
+import logo from '../../assets/Logodesktop.png';
+import styles from './NavBar.module.css';
+import { data } from './data';
 
 function NavBar() {
     return (
@@ -8,7 +9,19 @@ function NavBar() {
                 <div className={styles.navListContainer}>
                     <img src={logo} alt="Logo da loja Meteora" className={styles.navBar__logo}/>
                     <ul className={styles.navList}>
-                        <li className={styles.navList__item}>
+
+                        {data.map((item) =>  {
+                            return (
+                                <li 
+                                className={styles.navList__item} 
+                                key={item.id}
+                                href={item.href}
+                                >
+                                    <a className={styles.navList__link}>{item.nome}</a>
+                                </li>
+                            )
+                        })}
+                        {/* <li className={styles.navList__item}>
                             <a href='/' className={styles.navList__link}>Lojas</a>
                         </li>
                         <li className={styles.navList__item}>
@@ -19,7 +32,7 @@ function NavBar() {
                         </li>
                         <li className={styles.navList__item}>
                             <a href='/' className={styles.navList__link}>Promoções</a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 

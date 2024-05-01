@@ -21,18 +21,6 @@ function NavBar() {
                                 </li>
                             )
                         })}
-                        {/* <li className={styles.navList__item}>
-                            <a href='/' className={styles.navList__link}>Lojas</a>
-                        </li>
-                        <li className={styles.navList__item}>
-                            <a href='/' className={styles.navList__link}>Home</a>
-                        </li>
-                        <li className={styles.navList__item}>
-                            <a href='/' className={styles.navList__link}>Novidades</a>
-                        </li>
-                        <li className={styles.navList__item}>
-                            <a href='/' className={styles.navList__link}>Promoções</a>
-                        </li> */}
                     </ul>
                 </div>
 

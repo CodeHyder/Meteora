@@ -39,18 +39,19 @@
 .navFormContainer{
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 
 .navFormInput {
     height: 38px;
+    width: 207px;
     border-radius: 0px;
+    border: none;
     border: solid 1px var(--cinza);
 }
 
-.navFormButton {
-    height: 38px;
+.navFormButton { 
     padding: 9px 12px;
-    margin-left: 15px;
     background-color: var(--black);
     color: var(--white);
     font-weight: var(--font-medium);

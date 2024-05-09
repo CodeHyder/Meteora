@@ -2,8 +2,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import styles from './Carrousels.module.css'; 
 import React, { useState, useEffect } from 'react';
 
-
-
 function Carrousels({ props }) {
     
     const [imageSrcs] = useState({
@@ -24,7 +22,7 @@ function Carrousels({ props }) {
         return () => {
           window.removeEventListener('resize', handleResize);
         };
-      }, []);
+      }, [props.item]);
 
     return (
         <Carousel>
@@ -35,11 +33,11 @@ function Carrousels({ props }) {
                         <img
                             className={styles.bannerImg}
                             src={
-                                screenWidth < 642 
+                                 screenWidth < 642 
                                 ? imageSrcs.mobile[index]
                                 : screenWidth < 915 
                                 ? imageSrcs.tablet[index]   
-                                : imageSrcs.desktop[index] 
+                                : imageSrcs.desktop[index]  
                             }
                             alt={item.alt}
                         />

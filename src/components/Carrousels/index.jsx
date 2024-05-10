@@ -22,7 +22,7 @@ function Carrousels({ props }) {
         return () => {
           window.removeEventListener('resize', handleResize);
         };
-      }, [props.item]);
+      }, [props]);
 
     return (
         <Carousel>

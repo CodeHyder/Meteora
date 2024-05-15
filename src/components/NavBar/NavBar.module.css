@@ -83,3 +83,41 @@
         font-size: 13px;
     }
 }
+
+@media screen and (max-width: 642px) {
+    .navBar{
+        height: 144px;
+    }
+
+    .navBar__container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navListContainer {
+        height: 58px;
+        margin: 0 22px;
+    }
+    
+    .navList {
+        display: none;
+    }
+
+    .navFormContainer {
+        background-color: white;
+        height: 86px;
+        justify-content: center;
+    }
+
+    .navFormInput {
+        width: 226px;
+        border: 1px solid black;
+    }
+
+    .navFormButton {
+        background-color: white;
+        border: solid 1px black;
+        color: black;
+        height: 37px;
+    }
+}

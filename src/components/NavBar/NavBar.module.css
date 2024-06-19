@@ -1,11 +1,11 @@
-.navBar { 
+.navBar {
     background-color: var(--black);
     display: flex;
     justify-content: space-between;
     height: 58px;
 }
 
-.navBar__container { 
+.navBar__container {
     width: 100%;
     margin: 0 23px;
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 .navBar__logo {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .navList {
@@ -28,16 +28,16 @@
 
 .navList__item {
     font-size: var(--font-normal);
-    margin-left: 40px; 
+    margin-left: 40px;
 }
 
-.navList__link{
+.navList__link {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
-.navFormContainer{
+.navFormContainer {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -51,7 +51,7 @@
     border: solid 1px var(--cinza);
 }
 
-.navFormButton { 
+.navFormButton {
     padding: 9px 12px;
     background-color: var(--black);
     color: var(--white);
@@ -61,31 +61,39 @@
     cursor: pointer;
 }
 
+.navListLine{
+    display: none;
+}
+
 @media screen and (max-width: 915px) {
     .navList__item {
         margin-left: 20px;
     }
 
-    .navBar__logo{
+    .navBar__logo {
         height: 24px;
     }
 
-    .navList__link{
+    .navList__link {
         font-size: 13px;
     }
 
     .navFormInput {
-        width: 145px; 
+        width: 145px;
         font-size: 13px;
     }
 
-    .navFormButton{
+    .navFormButton {
         font-size: 13px;
+    }
+
+    .navListLine{
+        display: none;
     }
 }
 
 @media screen and (max-width: 642px) {
-    .navBar{
+    .navBar {
         height: 144px;
     }
 
@@ -97,10 +105,41 @@
     .navListContainer {
         height: 58px;
         margin: 0 22px;
+        justify-content: space-between;
     }
-    
-    .navList {
+
+    .closeMenu {
+        z-index: 99;
+    }
+
+    .navListLine {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 96px;
+        margin: 8px 0 8px 20px;   
+        border-bottom: 1px solid #CED4DA;
+    }
+
+    .navListLine:last-child{
         display: none;
+    }
+
+    .navList {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        right: 0;
+        flex-direction: column; 
+        height: 197px;
+        width: 144px;
+        background: #343A40;
+        justify-content: center;
+    } 
+
+    .navList__link {
+        font-size: 16px;
+
     }
 
     .navFormContainer {

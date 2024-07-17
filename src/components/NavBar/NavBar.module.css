@@ -65,6 +65,15 @@
     display: none;
 }
 
+.iconVisible {
+    display: none;
+}
+
+.iconInvisible {
+    display: none;
+}
+
+
 @media screen and (max-width: 915px) {
     .navList__item {
         margin-left: 20px;
@@ -90,6 +99,7 @@
     .navListLine{
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 642px) {
@@ -109,7 +119,26 @@
     }
 
     .closeMenu {
-        z-index: 99;
+        z-index: 100;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .iconVisible {
+        display: block;
+    }
+
+    .iconInvisible {
+        display: none;
+    }
+
+    .menu__hidden {
+        display: none;
+    }
+
+    .menu__visible {
+        display: flex;
     }
 
     .navListLine {

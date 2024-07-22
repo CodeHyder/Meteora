@@ -9,7 +9,8 @@
     width: 100%;
     margin: 0 23px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: space-between; 
 }
 
 .navListContainer {

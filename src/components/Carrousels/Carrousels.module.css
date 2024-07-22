@@ -1,10 +1,3 @@
-.bannerContainer { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 5px red;
-}
-
 .bannerImg {   
     height: 100%;
     width: 100%; 
@@ -16,9 +9,7 @@
     align-items: center;
     position: absolute;
     color: white;
-    height: 59%;
-    /* left: 459px;
-    top: 228.5px; */
+    height: 59%; 
 }
 
 .bannerTitle {

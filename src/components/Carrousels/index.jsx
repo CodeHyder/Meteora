@@ -4,11 +4,11 @@ import React, { useState, useEffect } from 'react';
 
 function Carrousels({ props }) {
     
-    const [imageSrcs] = useState({
+    const imageSrcs = {
         desktop: props.map((item) => item.srcDesktop),
         mobile: props.map((item) => item.srcMobile),
         tablet: props.map((item) => item.srcTablet),
-      });
+      }
 
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 

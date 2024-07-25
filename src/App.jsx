@@ -3,7 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import Carrousels from './components/Carrousels';
 import Categorias from './components/Categorias';
-import { carroulselData } from './data/carroulselData';
+import Produtos from './components/Produtos';
+import { carroulselData } from './data/carroulselData'; 
+
+// arrumar h3 da categoria produtos, margem tem que ser diferente em cada tela, exemplo: mobile tem que ser 24px auto
 
 function App() {
 
@@ -13,7 +16,8 @@ function App() {
       <Carrousels
         props={carroulselData}
       />
-      <Categorias />
+      <Categorias /> 
+      <Produtos />
     </>
   )
 }

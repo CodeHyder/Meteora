@@ -1,5 +1,4 @@
 import styles from './Categorias.module.css';
-import camiseta from '../../assets/Desktop/Categorias/Categoria_camiseta.png';
 import { data } from './data';
 
 function Categorias() {
